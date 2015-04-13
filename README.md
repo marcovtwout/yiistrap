@@ -1,8 +1,6 @@
 Yiistrap
 ========
 
-[![Build Status](https://travis-ci.org/crisu83/yiistrap.svg?branch=bs3)](https://travis-ci.org/crisu83/yiistrap)
-
 Twitter Bootstrap for Yii.
 
 ## Installation
@@ -14,7 +12,7 @@ Add the following to your composer.json file:
 
 ```js
 "require": {
-	"crisu83/yiistrap": "dev-bs3"
+	"marcovtwout/yiistrap": "~2.0@dev"
 }
 ````
 
@@ -39,7 +37,7 @@ Add the following to your application configuration:
     .....
     'gii' => array(
         'class' => 'system.gii.GiiModule',
-        'generatorPaths' => array('vendor.crisu83.yiistrap.gii'),
+        'generatorPaths' => array('vendor.marcovtwout.yiistrap.gii'),
     ),
 ),
 .....
