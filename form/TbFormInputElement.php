@@ -66,6 +66,10 @@ class TbFormInputElement extends CFormInputElement
             $properties['attribute'] = $this->name;
             $this->attributes['input'] = $parent->getOwner()->widget($this->type, $properties, true);
         }
+        
+        if ($this->hint !== null) {
+            $this->attributes['help'] = $this->hint;
+        }
 
         return $form->createControlGroup($type, $model, $this->name, $this->attributes, $this->items);
     }
